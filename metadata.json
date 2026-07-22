@@ -1,0 +1,6 @@
+{
+  "name": "REGIA — Casa de Eventos",
+  "description": "Landing page de alta conversión para REGIA Casa de Eventos, con cotizador interactivo en tiempo real, catálogo de espacios, paquetes todo incluido y atención por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

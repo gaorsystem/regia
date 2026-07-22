@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ink: #1c1220;
+    --wine: #3a1734;
+    --wine-soft: #4f2049;
+    --gold: #c9a13a;
+    --gold-light: #e2c471;
+    --ivory: #f5efe3;
+    --ivory-dim: #e9e0cd;
+    --emerald: #2c4636;
+    --blush: #d8a79f;
+    --line: rgba(245, 239, 227, 0.14);
+  }
+  
+  body {
+    background-color: var(--ink);
+    color: var(--ivory);
+    font-family: 'Manrope', sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Fraunces', serif;
+  }
+
+  .font-mono-tag {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes counterSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 35s linear infinite;
+}
+
+.animate-counter-spin {
+  animation: counterSpin 35s linear infinite;
+}
+
+.animate-float-soft {
+  animation: floatSoft 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1220;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a1734;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a13a;
+}
+
